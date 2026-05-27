@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="logo">YOUR NAME</div>
+    <nav>
+      <a href="#work">Posts</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Simple words. Outdoor life. Stories.</h1>
+      <p>A personal blog about travel, hiking, and design.</p>
+    </div>
+  </section>
+
+  <!-- POSTS GRID -->
+  <section id="work" class="grid">
+    <a class="card" href="#">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" />
+      <div>Mountain Days</div>
+    </a>
+
+    <a class="card" href="#">
+      <img src="https://images.unsplash.com/photo-1526481280695-3c687fd5432c" />
+      <div>Desert Walks</div>
+    </a>
+
+    <a class="card" href="#">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" />
+      <div>Gear Notes</div>
+    </a>
+
+    <a class="card" href="#">
+      <img src="https://images.unsplash.com/photo-1517823382935-51bfcb0ec6bc" />
+      <div>Field Journal</div>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>About</h2>
+    <p>
+      This is a minimal blog focused on outdoor travel, long trails, and design thinking.
+      Built simply, meant to evolve.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <p>Instagram · Email · GitHub</p>
+  </footer>
+
+</body>
+</html>
