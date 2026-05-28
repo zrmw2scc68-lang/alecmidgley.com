@@ -3,115 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PATCHS GARDEN</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Patch's Garden</title>
+
+  <style>
+    /* -----------------------------
+       GLOBAL STYLES
+    ----------------------------- */
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f3f3f1;
+      color: #3f2350; /* dark purple */
+      font-family: "Times New Roman", Times, serif;
+      font-weight: normal;
+    }
+
+    a {
+      color: #3f2350;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    /* -----------------------------
+       HEADER
+    ----------------------------- */
+
+    .header {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .site-title {
+      font-size: 4rem;
+      margin: 0;
+      letter-spacing: 1px;
+      font-weight: normal;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      font-size: 1rem;
+    }
+
+    /* -----------------------------
+       NAVIGATION
+    ----------------------------- */
+
+    .nav {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 1rem;
+    }
+
+    /* -----------------------------
+       BLOG ENTRY
+    ----------------------------- */
+
+    .blog-container {
+      width: 55%;
+      margin: 100px auto;
+    }
+
+    .blog-post {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .blog-image {
+      width: 40%;
+    }
+
+    .blog-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .blog-content {
+      width: 60%;
+    }
+
+    .blog-title {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: normal;
+    }
+
+    .blog-text {
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    /* -----------------------------
+       MOBILE
+    ----------------------------- */
+
+    @media (max-width: 900px) {
+
+      .blog-container {
+        width: 90%;
+      }
+
+      .blog-post {
+        flex-direction: column;
+      }
+
+      .blog-image,
+      .blog-content {
+        width: 100%;
+      }
+
+      .site-title {
+        font-size: 2.5rem;
+      }
+
+      .nav {
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+    }
+
+  </style>
 </head>
+
 <body>
 
-  <!-- NAV -->
-  <header class="nav">
-    <div class="logo">ALEC MIDGLEY</div>
-    <nav>
-      <a href="#work">Posts</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+  <!-- HEADER -->
+  <header class="header">
+
+    <h1 class="site-title">Patch's Garden</h1>
+
+    <div class="subtitle">
+      Alec Midgley
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+      <a href="#">blog</a>
+      <a href="#">photos</a>
+      <a href="#">about</a>
+      <a href="#">email</a>
+      <a href="#">contact</a>
     </nav>
+
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Patchs Garden</h1>
-      <p>Alec Midgley life</p>
-    </div>
-  </section>
+  <!-- BLOG SECTION -->
+  <main class="blog-container">
 
-  <!-- POSTS GRID -->
-  <section id="work" class="grid">
-    <a class="card" href="#">
-      <img src="images/DSCF6584.jpeg" />
-      <div>Mountain Days</div>
-    </a>
+    <article class="blog-post">
 
-    <a class="card" href="#">
-      <img src="images/me_himalayas.jpeg" />
-      <div>Desert Walks</div>
-    </a>
+      <!-- IMAGE -->
+      <div class="blog-image">
+        <img src="your-photo.jpg" alt="Blog image">
+      </div>
 
-    <a class="card" href="#">
-      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" />
-      <div>Gear Notes</div>
-    </a>
+      <!-- TEXT -->
+      <div class="blog-content">
 
-    <a class="card" href="#">
-      <img src="https://images.unsplash.com/photo-1517823382935-51bfcb0ec6bc" />
-      <div>Field Journal</div>
-    </a>
-  </section>
+        <h2 class="blog-title">
+          Walking Through Marrakech
+        </h2>
 
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <h2>About</h2>
-    <p>
-      This is a minimal blog focused on outdoor pizza, long pizza, and piza thinking.
-      pizza simply, meant to pizza
-    </p>
-  </section>
+        <div class="blog-text">
+          <p>
+            The streets felt endless. Dusty pink walls,
+            motorbikes cutting through crowds, the smell
+            of smoke and spices everywhere.
+          </p>
 
-  <!-- FOOTER -->
-  <footer id="contact">
-    <p>@patchsgarden · midgleyalec@icloud.com · pizza</p>
-  </footer>
+          <p>
+            I spent most of the afternoon wandering with
+            my camera and getting lost intentionally.
+          </p>
+        </div>
 
-  <div id="bg"></div>
+      </div>
 
-    <!--bouncing start-->
-  
-<script>
-const container = document.getElementById("bg");
-const imageSrc = "images/IMG_2294.jpeg";
+    </article>
 
-const items = [];
-const count = 20;
+  </main>
 
-for (let i = 0; i < count; i++) {
-  const img = document.createElement("img");
-  img.src = imageSrc;
-  img.className = "bg-img";
-
-  const obj = {
-    el: img,
-    x: Math.random() * window.innerWidth,
-    y: Math.random() * window.innerHeight,
-    vx: (Math.random() - 0.5) * 4,
-    vy: (Math.random() - 0.5) * 4
-  };
-
-  items.push(obj);
-  container.appendChild(img);
-}
-
-function animate() {
-  for (let i = 0; i < items.length; i++) {
-    const p = items[i];
-
-    p.x += p.vx;
-    p.y += p.vy;
-
-    // bounce off walls
-    if (p.x <= 0 || p.x >= window.innerWidth - 120) p.vx *= -1;
-    if (p.y <= 0 || p.y >= window.innerHeight - 120) p.vy *= -1;
-
-    p.el.style.transform = `translate(${p.x}px, ${p.y}px)`;
-  }
-
-  requestAnimationFrame(animate);
-}
-
-animate();
-</script>
-  
-  <!--bouncing end-->
-  
 </body>
 </html>
