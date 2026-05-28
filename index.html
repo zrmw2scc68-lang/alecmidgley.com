@@ -1,137 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Patch's Garden</title>
 
-  <style>
-    /* -----------------------------
-       GLOBAL STYLES
-    ----------------------------- */
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    body {
-      margin: 0;
-      padding: 0;
-      background: #f3f3f1;
-      color: #3f2350; /* dark purple */
-      font-family: "Times New Roman", Times, serif;
-      font-weight: normal;
-    }
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
 
-    a {
-      color: #3f2350;
-      text-decoration: underline;
-    }
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
-    a:hover {
-      opacity: 0.7;
-    }
-
-    /* -----------------------------
-       HEADER
-    ----------------------------- */
-
-    .header {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .site-title {
-      font-size: 4rem;
-      margin: 0;
-      letter-spacing: 1px;
-      font-weight: normal;
-    }
-
-    .subtitle {
-      margin-top: 8px;
-      font-size: 1rem;
-    }
-
-    /* -----------------------------
-       NAVIGATION
-    ----------------------------- */
-
-    .nav {
-      margin-top: 35px;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      font-size: 1rem;
-    }
-
-    /* -----------------------------
-       BLOG ENTRY
-    ----------------------------- */
-
-    .blog-container {
-      width: 55%;
-      margin: 100px auto;
-    }
-
-    .blog-post {
-      display: flex;
-      gap: 40px;
-      align-items: flex-start;
-    }
-
-    .blog-image {
-      width: 40%;
-    }
-
-    .blog-image img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .blog-content {
-      width: 60%;
-    }
-
-    .blog-title {
-      font-size: 2rem;
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-weight: normal;
-    }
-
-    .blog-text {
-      line-height: 1.7;
-      font-size: 1rem;
-    }
-
-    /* -----------------------------
-       MOBILE
-    ----------------------------- */
-
-    @media (max-width: 900px) {
-
-      .blog-container {
-        width: 90%;
-      }
-
-      .blog-post {
-        flex-direction: column;
-      }
-
-      .blog-image,
-      .blog-content {
-        width: 100%;
-      }
-
-      .site-title {
-        font-size: 2.5rem;
-      }
-
-      .nav {
-        gap: 20px;
-        flex-wrap: wrap;
-      }
-    }
-
-  </style>
 </head>
 
 <body>
@@ -141,9 +25,7 @@
 
     <h1 class="site-title">Patch's Garden</h1>
 
-    <div class="subtitle">
-      Alec Midgley
-    </div>
+    <p class="subtitle">Alec Midgley</p>
 
     <!-- NAVIGATION -->
     <nav class="nav">
@@ -159,30 +41,63 @@
   <!-- BLOG SECTION -->
   <main class="blog-container">
 
+    <!-- ENTRY 1 -->
     <article class="blog-post">
 
-      <!-- IMAGE -->
-      <div class="blog-image">
-        <img src="your-photo.jpg" alt="Blog image">
+      <h2 class="blog-title">
+        Walking Through Marrakech
+      </h2>
+
+      <img
+        src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1200&auto=format&fit=crop"
+        alt="Marrakech"
+        class="blog-image"
+      >
+
+      <div class="blog-text">
+
+        <p>
+          The streets folded endlessly into one another. Dust rose from scooters weaving through the crowds while the late afternoon light reflected off the faded pink walls.
+        </p>
+
+        <p>
+          I wandered most of the day carrying my camera without much direction. Some neighborhoods felt calm and residential while others exploded into noise and movement without warning.
+        </p>
+
+        <p>
+          The best moments usually happened after getting lost. Small doorways, rooftop cafes, hidden courtyards, and conversations that would never have happened if I followed a map too carefully.
+        </p>
+
       </div>
 
-      <!-- TEXT -->
-      <div class="blog-content">
+    </article>
 
-        <h2 class="blog-title">
-          Walking Through Marrakech
-        </h2>
+    <!-- ENTRY 2 -->
+    <article class="blog-post">
 
-        <div class="blog-text">
-          <p>
-            Patagonia Black Hole 25L. I really love the black hole line. They are extra durable and simply designed. I got a blue one at REI the previous Christmas. When I went to India in 2022 I was also still using a one backpack system and centering around the FjallRaven Raven 20L, and it was awesome. My favorite part were the small built in sleeves. With these you can organize cords and charges without needing to pack a designated tech pouch which is awesome. The G1000 fabric is very durable but after a year or two it turns brown and looks really ratty. Problems: it was a bit too small, wimpy laptop sleeve, separated into two main pockets. The black hole solved most, but not all of those problems. The size is perfect. And its just one big compartment, perfect for stuffing. But it loses the small built in sleeves. So no cord organization which isn’t a big deal, I’ve just got three, but it’s still something to think about. Problem: the size mesh isn’t durable, it would be very thought provoking to see what this thing would look like with the uhmwpe grid mesh that Pa’lante uses. I used one carabiner for hanging it on beds in hostels. 
-          </p>
+      <h2 class="blog-title">
+        Rain Along the Coast of Maine
+      </h2>
 
-          <p>
-            I spent most of the afternoon wandering with
-            my camera and getting lost intentionally.
-          </p>
-        </div>
+      <img
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+        alt="Maine"
+        class="blog-image"
+      >
+
+      <div class="blog-text">
+
+        <p>
+          The weather changed every twenty minutes. Fog rolled in across the harbor before clearing just long enough for sunlight to hit the water again.
+        </p>
+
+        <p>
+          Most of the afternoon was spent walking along wet rocks and watching lobster boats disappear into the mist. Everything felt slower than usual.
+        </p>
+
+        <p>
+          Maine has a strange ability to feel both isolated and familiar at the same time. Even empty places seem full of history.
+        </p>
 
       </div>
 
