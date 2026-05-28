@@ -1,13 +1,29 @@
 /* -----------------------------
+   GLOBAL COLORS
+----------------------------- */
+
+:root {
+
+  --main-purple: #5b4b8a;
+  --background: #f3f3f1;
+
+}
+
+/* -----------------------------
    PAGE
 ----------------------------- */
 
 body {
+
   margin: 0;
   padding: 0;
-  background: #f3f3f1;
-  color: #3f2350;
+
+  background: var(--background);
+
+  color: var(--main-purple);
+
   font-family: "Cormorant Garamond", serif;
+
 }
 
 /* -----------------------------
@@ -15,12 +31,17 @@ body {
 ----------------------------- */
 
 a {
-  color: #3f2350;
+
+  color: var(--main-purple);
+
   text-decoration: underline;
+
 }
 
 a:hover {
+
   opacity: 0.7;
+
 }
 
 /* -----------------------------
@@ -28,20 +49,31 @@ a:hover {
 ----------------------------- */
 
 .header {
+
   text-align: center;
+
   margin-top: 40px;
+
 }
 
 .site-title {
-  font-size: 4rem;
+
+  font-size: 4.5rem;
+
+  font-weight: 500;
+
   margin: 0;
-  font-weight: normal;
+
   letter-spacing: 1px;
+
 }
 
 .subtitle {
-  margin-top: 8px;
+
+  margin-top: 5px;
+
   font-size: 1rem;
+
 }
 
 /* -----------------------------
@@ -49,51 +81,87 @@ a:hover {
 ----------------------------- */
 
 .nav {
+
   margin-top: 35px;
+
   display: flex;
+
   justify-content: center;
+
   gap: 40px;
+
   font-size: 1rem;
+
 }
 
 /* -----------------------------
-   BLOG LAYOUT
+   BLOG AREA
 ----------------------------- */
 
 .blog-container {
+
   width: 55%;
-  margin: 100px auto;
+
+  margin: 90px auto;
+
 }
+
+/* -----------------------------
+   BLOG POSTS
+----------------------------- */
 
 .blog-post {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
+
+  border: 1px solid black;
+
+  padding: 35px;
+
+  margin-bottom: 80px;
+
+  overflow: hidden;
+
 }
 
-.blog-image {
-  width: 40%;
-}
-
-.blog-image img {
-  width: 100%;
-  display: block;
-}
-
-.blog-content {
-  width: 60%;
-}
+/* -----------------------------
+   BLOG TITLE
+----------------------------- */
 
 .blog-title {
-  font-size: 2rem;
+
   margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: normal;
+
+  font-size: 2.2rem;
+
+  font-weight: 500;
+
 }
 
+/* -----------------------------
+   BLOG IMAGE
+----------------------------- */
+
+.blog-image {
+
+  float: right;
+
+  width: 38%;
+
+  margin-left: 30px;
+
+  margin-bottom: 20px;
+
+}
+
+/* -----------------------------
+   BLOG TEXT
+----------------------------- */
+
 .blog-text {
-  line-height: 1.7;
-  font-size: 1rem;
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+
 }
 
 /* -----------------------------
@@ -103,24 +171,33 @@ a:hover {
 @media (max-width: 900px) {
 
   .blog-container {
+
     width: 90%;
+
   }
 
-  .blog-post {
-    flex-direction: column;
-  }
+  .blog-image {
 
-  .blog-image,
-  .blog-content {
+    float: none;
+
     width: 100%;
+
+    margin-left: 0;
+
   }
 
   .site-title {
-    font-size: 2.5rem;
+
+    font-size: 3rem;
+
   }
 
   .nav {
+
     gap: 20px;
+
     flex-wrap: wrap;
+
   }
+
 }
