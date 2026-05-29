@@ -166,61 +166,57 @@ a:hover {
 
   position: relative;
 
-  width: 280px;
+  width: 250px;
 
-  height: 280px;
+  height: 270px;
 
-  margin-left: 45px;
+  margin-left: 40px;
 
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
 }
 
-/* FRONT PHOTO */
+/* BOTH PHOTOS */
 
-.photo-one {
+.stack-photo {
 
   position: absolute;
 
-  width: 180px;
+  width: 100px;
 
-  top: 5px;
+  height: auto;
+
+  border: 1px solid black;
+
+  background: white;
+
+  padding: 8px;
+
+  box-sizing: border-box;
+
+}
+
+/* TOP PHOTO */
+
+.stack-photo:first-child {
+
+  top: 0;
 
   right: 0;
 
   z-index: 2;
 
-  transform: rotate(4deg);
-   
-  border: 1px solid black;
-
-  background: white;
-
-  padding: 6px;
-
 }
 
-/* BACK PHOTO */
+/* BOTTOM PHOTO */
 
-.photo-two {
+.second-photo {
 
-  position: absolute;
+  top: 80px;
 
-  width: 170px;
-
-  top: 90px;
-
-  right: 95px;
+  right: 70px;
 
   z-index: 1;
-
-  transform: rotate(-6deg);
-
-  border: 1px solid black;
-
-  background: white;
-
-  padding: 6px;
 
 }
 
