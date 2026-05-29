@@ -236,6 +236,53 @@ a:hover {
 
 }
 
+
+/* -----------------------------
+   PHOTO GALLERY
+----------------------------- */
+
+.gallery-container {
+
+  width: 75%;
+
+  margin: 40px auto 100px auto;
+
+  column-count: 2;
+
+  column-gap: 18px;
+
+}
+
+.gallery-container img {
+
+  width: 100%;
+
+  margin-bottom: 18px;
+
+  display: block;
+
+  break-inside: avoid;
+
+  border: 1px solid black;
+
+}
+
+/* -----------------------------
+   MOBILE GALLERY
+----------------------------- */
+
+@media (max-width: 900px) {
+
+  .gallery-container {
+
+    width: 92%;
+
+    column-count: 1;
+
+  }
+
+}
+
 /* -----------------------------
    MOBILE
 ----------------------------- */
