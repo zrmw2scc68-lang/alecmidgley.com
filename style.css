@@ -217,6 +217,9 @@ a:hover {
     flex-wrap: wrap;
 
   }
+
+   /* bouncing start */
+
    #bg {
   position: fixed;
   top: 0;
@@ -234,5 +237,5 @@ a:hover {
   height: auto;
   opacity: 1;
 }
-
+/* bouncing end */
 }
