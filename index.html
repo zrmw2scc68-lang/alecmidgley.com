@@ -120,6 +120,49 @@
   </main>
 <!-- bouncing start -->
 <div id="bg"></div>
+  <script>
+const container = document.getElementById("bg");
+const imageSrc = "images/IMG_2294.jpeg";
+
+const items = [];
+const count = 20;
+
+for (let i = 0; i < count; i++) {
+  const img = document.createElement("img");
+  img.src = imageSrc;
+  img.className = "bg-img";
+
+  const obj = {
+    el: img,
+    x: Math.random() * window.innerWidth,
+    y: Math.random() * window.innerHeight,
+    vx: (Math.random() - 0.5) * 4,
+    vy: (Math.random() - 0.5) * 4
+  };
+
+  items.push(obj);
+  container.appendChild(img);
+}
+
+function animate() {
+  for (let i = 0; i < items.length; i++) {
+    const p = items[i];
+
+    p.x += p.vx;
+    p.y += p.vy;
+
+    // bounce off walls
+    if (p.x <= 0 || p.x >= window.innerWidth - 120) p.vx *= -1;
+    if (p.y <= 0 || p.y >= window.innerHeight - 120) p.vy *= -1;
+
+    p.el.style.transform = `translate(${p.x}px, ${p.y}px)`;
+  }
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+</script>
 <!-- boucning end -->
 </body>
 </html>
