@@ -191,6 +191,12 @@ a:hover {
   z-index: 2;
 
   transform: rotate(4deg);
+   
+  border: 1px solid black;
+
+  background: white;
+
+  padding: 6px;
 
 }
 
