@@ -236,22 +236,23 @@ a:hover {
 
 }
 
-
 /* -----------------------------
    PHOTO GALLERY
 ----------------------------- */
 
 .gallery-container {
 
-  width: 75%;
+  width: 97%;
 
-  margin: 40px auto 100px auto;
+  margin: 30px auto 80px auto;
 
-  column-count: 2;
+  column-count: 4;
 
   column-gap: 18px;
 
 }
+
+/* IMAGES */
 
 .gallery-container img {
 
@@ -263,25 +264,54 @@ a:hover {
 
   break-inside: avoid;
 
-  border: 1px solid black;
+  transition: opacity 0.2s ease;
+
+}
+
+/* HOVER */
+
+.gallery-container img:hover {
+
+  opacity: 0.92;
 
 }
 
 /* -----------------------------
-   MOBILE GALLERY
+   RESPONSIVE
 ----------------------------- */
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
 
   .gallery-container {
 
-    width: 92%;
+    column-count: 3;
+
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .gallery-container {
+
+    column-count: 2;
+
+    width: 95%;
+
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .gallery-container {
 
     column-count: 1;
 
   }
 
 }
+
 
 /* -----------------------------
    MOBILE
