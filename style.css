@@ -224,6 +224,31 @@ a:hover {
 
 }
 
+/* THIRD PHOTO */
+
+.photo-three {
+
+  position: absolute;
+
+  width: 170px;
+
+  top: 190px;
+
+  right: 160px;
+
+  z-index: 0;
+
+  transform: rotate(7deg);
+
+  border: 1px solid black;
+
+  background: white;
+
+  padding: 6px;
+
+}
+
+
 /* -----------------------------
    TEXT
 ----------------------------- */
