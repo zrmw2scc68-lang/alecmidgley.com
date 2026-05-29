@@ -4,7 +4,8 @@
 
 :root {
 
-  --main-purple: #5b4b8a;
+  --main-purple: #6a4fb3;
+
   --background: #f3f3f1;
 
 }
@@ -16,6 +17,7 @@
 body {
 
   margin: 0;
+
   padding: 0;
 
   background: var(--background);
@@ -52,7 +54,7 @@ a:hover {
 
   text-align: center;
 
-  margin-top: 12px;
+  margin-top: 10px;
 
 }
 
@@ -60,7 +62,7 @@ a:hover {
 
   font-family: "UnifrakturCook", cursive;
 
-  font-size: 3rem;
+  font-size: 2.9rem;
 
   font-weight: 700;
 
@@ -70,11 +72,11 @@ a:hover {
 
 .subtitle {
 
-  margin-top: 2px;
+  margin-top: 3px;
 
   margin-bottom: 0;
 
-  font-size: 0.95rem;
+  font-size: 1rem;
 
 }
 
@@ -102,9 +104,9 @@ a:hover {
 
 .blog-container {
 
-  width: 55%;
+  width: 52%;
 
-  margin: 30px auto;
+  margin: 22px auto;
 
 }
 
@@ -118,9 +120,11 @@ a:hover {
 
   padding: 35px;
 
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 
   overflow: hidden;
+
+  background: transparent;
 
 }
 
@@ -132,7 +136,7 @@ a:hover {
 
   font-size: 1rem;
 
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
 }
 
@@ -162,45 +166,61 @@ a:hover {
 
   position: relative;
 
-  width: 320px;
+  width: 240px;
 
-  height: 320px;
+  height: 240px;
 
   margin-left: 35px;
 
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
 }
 
-/* FIRST PHOTO */
+/* FRONT PHOTO */
 
 .photo-one {
 
   position: absolute;
 
-  width: 220px;
+  width: 155px;
 
-  top: 0;
+  top: 5px;
 
   right: 0;
 
+  z-index: 2;
+
+  transform: rotate(4deg);
+
   border: 1px solid black;
+
+  background: white;
+
+  padding: 6px;
 
 }
 
-/* SECOND PHOTO */
+/* BACK PHOTO */
 
 .photo-two {
 
   position: absolute;
 
-  width: 190px;
+  width: 145px;
 
-  top: 110px;
+  top: 90px;
 
-  right: 120px;
+  right: 95px;
+
+  z-index: 1;
+
+  transform: rotate(-6deg);
 
   border: 1px solid black;
+
+  background: white;
+
+  padding: 6px;
 
 }
 
@@ -210,9 +230,9 @@ a:hover {
 
 .blog-text {
 
-  font-size: 1.08rem;
+  font-size: 1.12rem;
 
-  line-height: 1.8;
+  line-height: 1.9;
 
 }
 
@@ -234,15 +254,17 @@ a:hover {
 
     width: 100%;
 
-    height: 420px;
+    height: 320px;
 
     margin-left: 0;
+
+    margin-bottom: 20px;
 
   }
 
   .site-title {
 
-    font-size: 2.3rem;
+    font-size: 2.2rem;
 
   }
 
@@ -254,208 +276,4 @@ a:hover {
 
   }
 
-}  text-decoration: underline;
-
-}
-
-a:hover {
-
-  opacity: 0.7;
-
-}
-
-/* -----------------------------
-   HEADER
------------------------------ */
-
-.header {
-
-  text-align: center;
-
-  margin-top: 15px;
-
-}
-
-.site-title {
-
-  font-family: "UnifrakturCook", cursive;
-
-  font-size: 3.2rem;
-
-  font-weight: 700;
-
-  margin: 0;
-
-}
-
-.subtitle {
-
-  margin-top: 2px;
-
-  margin-bottom: 0;
-
-  font-size: 0.95rem;
-
-}
-
-/* -----------------------------
-   NAVIGATION
------------------------------ */
-
-.nav {
-
-  margin-top: 18px;
-
-  display: flex;
-
-  justify-content: center;
-
-  gap: 34px;
-
-  font-size: 1rem;
-
-}
-
-/* -----------------------------
-   BLOG AREA
------------------------------ */
-
-.blog-container {
-
-  width: 55%;
-
-  margin: 45px auto;
-
-}
-
-/* -----------------------------
-   BLOG POSTS
------------------------------ */
-
-.blog-post {
-
-  border: 1px solid black;
-
-  padding: 35px;
-
-  margin-bottom: 60px;
-
-  overflow: hidden;
-
-}
-
-/* -----------------------------
-   DATE
------------------------------ */
-
-.entry-date {
-
-  font-size: 0.9rem;
-
-  margin-bottom: 10px;
-
-  opacity: 0.8;
-
-}
-
-/* -----------------------------
-   BLOG TITLE
------------------------------ */
-
-.blog-title {
-
-  margin-top: 0;
-
-  margin-bottom: 22px;
-
-  font-size: 2rem;
-
-  font-weight: 500;
-
-}
-
-/* -----------------------------
-   IMAGE
------------------------------ */
-
-.blog-image {
-
-  float: right;
-
-  width: 38%;
-
-  margin-left: 30px;
-
-  margin-bottom: 20px;
-
-}
-
-/* -----------------------------
-   TEXT
------------------------------ */
-
-.blog-text {
-
-  font-size: 1.08rem;
-
-  line-height: 1.8;
-
-}
-
-/* -----------------------------
-   MOBILE
------------------------------ */
-
-@media (max-width: 900px) {
-
-  .blog-container {
-
-    width: 90%;
-
-  }
-
-  .blog-image {
-
-    float: none;
-
-    width: 100%;
-
-    margin-left: 0;
-
-  }
-
-  .site-title {
-
-    font-size: 2.5rem;
-
-  }
-
-  .nav {
-
-    gap: 20px;
-
-    flex-wrap: wrap;
-
-  }
-
-   /* bouncing start */
-
-   #bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -1; /* keeps it behind your text */
-  pointer-events: none;
-}
-
-.bg-img {
-  position: absolute;
-  width: 100px;   /* adjust size */
-  height: auto;
-  opacity: 1;
-}
-/* bouncing end */
 }
