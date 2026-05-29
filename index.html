@@ -37,8 +37,8 @@
       <a href="#">blog</a>
       <a href="#">photos</a>
       <a href="#">about</a>
-      <a href="#">instagram</a>
-      <a href="#">youtube</a>
+      <a href="#">email</a>
+      <a href="#">contact</a>
 
     </nav>
 
@@ -58,11 +58,22 @@
         Walking Through Marrakech
       </h2>
 
-      <img
-        src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1200&auto=format&fit=crop"
-        alt="Marrakech"
-        class="blog-image"
-      >
+      <!-- PHOTO STACK -->
+      <div class="photo-stack">
+
+        <img
+          src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1200&auto=format&fit=crop"
+          alt="Marrakech"
+          class="photo-one"
+        >
+
+        <img
+          src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop"
+          alt="Market"
+          class="photo-two"
+        >
+
+      </div>
 
       <div class="blog-text">
 
@@ -75,7 +86,11 @@
         </p>
 
         <p>
-          The best moments usually happened after getting lost.
+          The best moments usually happened after getting lost. Small doorways, rooftop cafes, hidden courtyards, and conversations that would never have happened if I followed a map too carefully.
+        </p>
+
+        <p>
+          By evening the city felt softer. The noise settled into the background and everything became slower and warmer.
         </p>
 
       </div>
@@ -93,11 +108,22 @@
         Rain Along the Coast of Maine
       </h2>
 
-      <img
-        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
-        alt="Maine"
-        class="blog-image"
-      >
+      <!-- PHOTO STACK -->
+      <div class="photo-stack">
+
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+          alt="Maine"
+          class="photo-one"
+        >
+
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+          alt="Fog"
+          class="photo-two"
+        >
+
+      </div>
 
       <div class="blog-text">
 
@@ -110,7 +136,11 @@
         </p>
 
         <p>
-          Everything felt quieter than usual.
+          Maine has a strange ability to feel both isolated and familiar at the same time.
+        </p>
+
+        <p>
+          Even empty places seem full of history.
         </p>
 
       </div>
@@ -118,51 +148,6 @@
     </article>
 
   </main>
-<!-- bouncing start -->
-<div id="bg"></div>
-  <script>
-const container = document.getElementById("bg");
-const imageSrc = "images/IMG_2294.jpeg";
 
-const items = [];
-const count = 20;
-
-for (let i = 0; i < count; i++) {
-  const img = document.createElement("img");
-  img.src = imageSrc;
-  img.className = "bg-img";
-
-  const obj = {
-    el: img,
-    x: Math.random() * window.innerWidth,
-    y: Math.random() * window.innerHeight,
-    vx: (Math.random() - 0.5) * 4,
-    vy: (Math.random() - 0.5) * 4
-  };
-
-  items.push(obj);
-  container.appendChild(img);
-}
-
-function animate() {
-  for (let i = 0; i < items.length; i++) {
-    const p = items[i];
-
-    p.x += p.vx;
-    p.y += p.vy;
-
-    // bounce off walls
-    if (p.x <= 0 || p.x >= window.innerWidth - 120) p.vx *= -1;
-    if (p.y <= 0 || p.y >= window.innerHeight - 120) p.vy *= -1;
-
-    p.el.style.transform = `translate(${p.x}px, ${p.y}px)`;
-  }
-
-  requestAnimationFrame(animate);
-}
-
-animate();
-</script>
-<!-- boucning end -->
 </body>
 </html>
