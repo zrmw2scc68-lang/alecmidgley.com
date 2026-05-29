@@ -217,5 +217,22 @@ a:hover {
     flex-wrap: wrap;
 
   }
+   #bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* keeps it behind your text */
+  pointer-events: none;
+}
+
+.bg-img {
+  position: absolute;
+  width: 100px;   /* adjust size */
+  height: auto;
+  opacity: 1;
+}
 
 }
