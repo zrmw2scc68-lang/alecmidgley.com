@@ -173,6 +173,8 @@ a:hover {
   margin-bottom: 15px;
 
   border: 1px solid black;
+  
+  transition: opacity 0.2s ease; 
 
 }
 
@@ -190,8 +192,19 @@ a:hover {
 
   border: 1px solid black;
 
+  transition: opacity 0.2s ease;
+
 }
 
+/* HOVER EFFECT */
+
+.photo-left:hover,
+
+.photo-right:hover {
+
+  opacity: 0.85;
+
+}
 
 /* -----------------------------
    TEXT
@@ -241,7 +254,7 @@ a:hover {
 
 .gallery-container img:hover {
 
-  opacity: 0.92;
+  opacity: 0.85;
 
 }
 
