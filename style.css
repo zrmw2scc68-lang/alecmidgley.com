@@ -208,6 +208,34 @@ a:hover {
 
 }
 
+@media (min-width: 901px) {
+
+  .blog-preview-text {
+
+    display: block;
+
+    -webkit-line-clamp: unset;
+
+    -webkit-box-orient: unset;
+
+    overflow: hidden;
+
+  }
+
+  .blog-preview:has([src*="asia_gear"]) .blog-preview-text {
+
+    max-height: calc(400px * 3024 / 4032);
+
+  }
+
+  .blog-preview:has([src*="himalayas"]) .blog-preview-text {
+
+    max-height: calc(400px * 2944 / 4416);
+
+  }
+
+}
+
 /* -----------------------------
    PHOTOS
 ----------------------------- */
