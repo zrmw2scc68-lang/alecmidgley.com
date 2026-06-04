@@ -180,6 +180,12 @@ a:hover {
 
 .blog-preview {
 
+  overflow: hidden;
+
+}
+
+.blog-preview-text {
+
   font-size: 1.12rem;
 
   line-height: 1.9;
@@ -188,7 +194,7 @@ a:hover {
 
   -webkit-box-orient: vertical;
 
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 4;
 
   overflow: hidden;
 
@@ -199,14 +205,6 @@ a:hover {
   margin-top: 8px;
 
   margin-bottom: 0;
-
-}
-
-.read-more a {
-
-  color: #cc0000;
-
-  text-decoration: underline;
 
 }
 
