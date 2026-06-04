@@ -178,6 +178,38 @@ a:hover {
 
 }
 
+.blog-preview {
+
+  font-size: 1.12rem;
+
+  line-height: 1.9;
+
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+
+  -webkit-line-clamp: 6;
+
+  overflow: hidden;
+
+}
+
+.read-more {
+
+  margin-top: 8px;
+
+  margin-bottom: 0;
+
+}
+
+.read-more a {
+
+  color: #cc0000;
+
+  text-decoration: underline;
+
+}
+
 /* -----------------------------
    PHOTOS
 ----------------------------- */
