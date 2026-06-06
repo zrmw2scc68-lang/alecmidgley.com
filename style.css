@@ -332,6 +332,74 @@ a:hover {
 
 }
 
+.photo-hover-caption {
+
+  position: relative;
+
+  margin: 0;
+
+}
+
+.photo-hover-caption img {
+
+  display: block;
+
+  width: 100%;
+
+  transition: opacity 0.2s ease;
+
+}
+
+.photo-hover-caption:hover {
+
+  opacity: 1;
+
+}
+
+.photo-hover-caption:hover img {
+
+  opacity: 0.90;
+
+}
+
+.photo-hover-caption__text {
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background: var(--background);
+
+  color: var(--main-purple);
+
+  padding: 10px 14px;
+
+  text-align: center;
+
+  font-size: 1rem;
+
+  line-height: 1.5;
+
+  max-width: 90%;
+
+  opacity: 0;
+
+  transition: opacity 0.2s ease;
+
+  pointer-events: none;
+
+}
+
+.photo-hover-caption:hover .photo-hover-caption__text {
+
+  opacity: 1;
+
+}
+
 /* -----------------------------
    PHOTO GALLERY
 ----------------------------- */
