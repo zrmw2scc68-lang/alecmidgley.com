@@ -234,13 +234,19 @@ a:hover {
 
   line-height: 0;
 
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
 }
 
 .reaction-btn.is-active {
 
-  background: var(--text-color);
+  background: #000000;
 
-  color: var(--background);
+  color: #ffffff;
 
 }
 
@@ -270,7 +276,9 @@ a:hover {
 
 .reaction-btn.is-active .reaction-shape {
 
-  fill: currentColor;
+  fill: #ffffff;
+
+  stroke: #ffffff;
 
 }
 
