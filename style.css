@@ -346,7 +346,7 @@ a:hover {
 
   width: 100%;
 
-  transition: opacity 0.2s ease;
+  transition: opacity 0.8s ease;
 
 }
 
@@ -358,7 +358,7 @@ a:hover {
 
 .photo-hover-caption:hover img {
 
-  opacity: 0.90;
+  opacity: 0.55;
 
 }
 
@@ -388,7 +388,7 @@ a:hover {
 
   opacity: 0;
 
-  transition: opacity 1s ease;
+  transition: opacity 0.8s ease;
 
   pointer-events: none;
 
