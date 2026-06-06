@@ -178,6 +178,14 @@ a:hover {
 
 }
 
+.blog-signoff {
+
+  margin-top: 1.5em;
+
+  margin-bottom: 0;
+
+}
+
 .blog-preview {
 
   --preview-photo-width: 400px;
