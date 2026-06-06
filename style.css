@@ -2,13 +2,11 @@
    COLORS
 ----------------------------- */
 
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
 :root {
 
-  --text-color: #000000;
+  --main-purple: #ffffff;
 
-  --background: #ffffff;
+  --background: #601bc6;
 
 }
 
@@ -24,7 +22,7 @@ body {
 
   background: var(--background);
 
-  color: var(--text-color);
+  color: var(--main-purple);
 
   font-family: "Cormorant Garamond", serif;
 
@@ -36,7 +34,7 @@ body {
 
 a {
 
-  color: var(--text-color);
+  color: var(--main-purple);
 
   text-decoration: underline;
 
@@ -54,39 +52,31 @@ a:hover {
 
 .header {
 
-  width: 100%;
-
   text-align: center;
 
-  margin-top: 0;
-
-  padding-top: 18px;
+  margin-top: 10px;
 
 }
 
 .site-title {
 
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "UnifrakturCook", cursive;
 
-  font-size: clamp(3.5rem, 14vw, 9rem);
+  font-size: 2.9rem;
 
-  font-weight: 400;
-
-  letter-spacing: 0.06em;
-
-  line-height: 0.95;
-
-  text-transform: uppercase;
+  font-weight: 700;
 
   margin: 0;
-
-  padding: 0 24px;
 
 }
 
 .subtitle {
 
-  display: none;
+  margin-top: 3px;
+
+  margin-bottom: 0;
+
+  font-size: 1rem;
 
 }
 
@@ -130,7 +120,7 @@ a:hover {
 
   padding: 35px;
 
-  margin-bottom: 35px;
+  margin-bottom: 55px;
 
   overflow: hidden;
 
@@ -185,102 +175,6 @@ a:hover {
   font-size: 1.12rem;
 
   line-height: 1.9;
-
-}
-
-.blog-preview {
-
-  --preview-photo-width: 400px;
-
-  --preview-photo-height: calc(var(--preview-photo-width) * 2 / 3);
-
-  display: grid;
-
-  grid-template-columns: 1fr var(--preview-photo-width);
-
-  gap: 25px;
-
-  align-items: start;
-
-}
-
-.blog-preview-content {
-
-  display: flex;
-
-  flex-direction: column;
-
-  height: var(--preview-photo-height);
-
-  min-height: 0;
-
-  overflow: hidden;
-
-}
-
-.blog-preview-text {
-
-  flex: 1;
-
-  min-height: 0;
-
-  font-size: 1.12rem;
-
-  line-height: 1.9;
-
-  overflow: hidden;
-
-}
-
-.blog-preview-text p {
-
-  margin: 0;
-
-}
-
-.blog-preview-text p + p {
-
-  margin-top: 0.75em;
-
-}
-
-.blog-preview-photo {
-
-  grid-column: 2;
-
-  grid-row: 1;
-
-  width: var(--preview-photo-width);
-
-  height: var(--preview-photo-height);
-
-  aspect-ratio: 3 / 2;
-
-  object-fit: cover;
-
-  border: 1px solid black;
-
-  margin: 0;
-
-  float: none;
-
-  transition: opacity 0.2s ease;
-
-}
-
-.blog-preview-photo:hover {
-
-  opacity: 0.90;
-
-}
-
-.blog-preview-content .read-more {
-
-  margin-top: 8px;
-
-  margin-bottom: 0;
-
-  flex-shrink: 0;
 
 }
 
@@ -438,57 +332,9 @@ a:hover {
 
   }
 
-  .blog-preview {
-
-    grid-template-columns: 1fr;
-
-    gap: 15px;
-
-  }
-
-  .blog-preview-photo {
-
-    grid-column: 1;
-
-    grid-row: 1;
-
-    width: 100%;
-
-    max-width: 350px;
-
-    height: auto;
-
-    justify-self: center;
-
-  }
-
-  .blog-preview-content {
-
-    grid-column: 1;
-
-    grid-row: 2;
-
-    height: auto;
-
-  }
-
-  .blog-preview-text {
-
-    display: -webkit-box;
-
-    -webkit-box-orient: vertical;
-
-    -webkit-line-clamp: 4;
-
-    flex: none;
-
-  }
-
   .site-title {
 
-    font-size: clamp(2.8rem, 18vw, 4.5rem);
-
-    letter-spacing: 0.04em;
+    font-size: 2.2rem;
 
   }
 
