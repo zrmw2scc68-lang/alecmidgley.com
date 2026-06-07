@@ -304,6 +304,14 @@ a:hover {
 
 }
 
+.photo-right img {
+
+  display: block;
+
+  width: 100%;
+
+}
+
 /* PHOTO ON LEFT */
 
 .photo-left {
@@ -319,6 +327,14 @@ a:hover {
   border: 1px solid black;
 
   transition: opacity 0.2s ease;
+
+}
+
+.photo-left img {
+
+  display: block;
+
+  width: 100%;
 
 }
 
